@@ -5,15 +5,15 @@ use strict;
 
 =head1 NAME
 
-WWW::LargeFileFetcher - The great new WWW::LargeFileFetcher!
+WWW::LargeFileFetcher - a module used to fetch large files from internet.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -41,7 +41,7 @@ The opinions hash can be:
 =item $fetcher->get($url,$filename);
 
 The return value can be:
-    1  : success
+     1 : success
     -1 : IO error
     -2 : internet access error
 
@@ -51,49 +51,15 @@ The detailed error string can be accessed from $fetcher->err_str();
 
 This method is used to test whether the $url is downloadable.
 
+=item $fetcher->err_str();
+
+Return the detail description of the error occured.
+
 =back    
 
 =head1 AUTHOR
 
 Zhang Jun, C<< <jzhang533 at gmail.com> >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to
-C<bug-www-largefilefetcher at rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=WWW-LargeFileFetcher>.
-I will be notified, and then you'll automatically be notified of progress on
-your bug as I make changes.
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc WWW::LargeFileFetcher
-
-You can also look for information at:
-
-=over 4
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/WWW-LargeFileFetcher>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/WWW-LargeFileFetcher>
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=WWW-LargeFileFetcher>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/WWW-LargeFileFetcher>
-
-=back
-
-=head1 ACKNOWLEDGEMENTS
 
 =head1 COPYRIGHT & LICENSE
 

@@ -9,8 +9,8 @@ WriteMakefile(
     ABSTRACT_FROM       => 'lib/WWW/LargeFileFetcher.pm',
     PL_FILES            => {},
     PREREQ_PM => {
-        'Test::More' => 0,
-        'LWP::UserAgent' => 1,
+        'Test::More' => 0.64,
+        'LWP::UserAgent' => 2.033,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'WWW-LargeFileFetcher-*' },
